@@ -1,0 +1,11 @@
+# This service file allows us to set stream parameters in runtime
+# without having to restart the stream.
+# This is useful for changing the stream resolution, framerate, etc.
+string subscription_topic
+int32 frame_rate
+int32 width
+int32 height
+# int32 bitrate
+---
+bool success
+
