@@ -5,7 +5,7 @@
 # header
 Header header
 # audio data
-uint8[] data
+int16[] data
 # sample rate
 int32 sample_rate
 # number of channels
