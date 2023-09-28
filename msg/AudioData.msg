@@ -3,7 +3,7 @@
 # The audio data is stored in a list of 16 bit integers
 
 # header
-Header header
+std_msgs/Header header
 # audio data
 int16[] data
 # sample rate
