@@ -16,9 +16,13 @@ find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(
   ${PROJECT_NAME}
-  msg/AudioData.msg
-  msg/TranscriptionResult.msg
-  srv/SetStreamParams.srv
+  "msg/AudioData.msg"
+  "msg/TranscriptionResult.msg"
+  "msg/NetworkInfo.msg"
+  "msg/WiFiNetwork.msg"
+  "msg/NetworkCommand.msg"
+  "msg/Command.msg"
+  "srv/SetStreamParams.srv"
   DEPENDENCIES std_msgs
 )
 
