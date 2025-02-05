@@ -1,2 +1,1 @@
-string url
 string action
