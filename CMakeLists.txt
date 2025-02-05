@@ -21,7 +21,10 @@ rosidl_generate_interfaces(
   "msg/NetworkInfo.msg"
   "msg/WiFiNetwork.msg"
   "msg/NetworkCommand.msg"
+  "msg/AccessoryCommand.msg"
+  "msg/ActionCommand.msg"
   "msg/Command.msg"
+  "msg/StandByCommand.msg"
   "srv/SetStreamParams.srv"
   DEPENDENCIES std_msgs
 )
