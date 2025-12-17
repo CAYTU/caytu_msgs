@@ -1,11 +1,18 @@
-# This service file allows us to set stream parameters in runtime
-# without having to restart the stream.
-# This is useful for changing the stream resolution, framerate, etc.
+# Service to set stream parameters at runtime.
+#
+# Request:
+#   string subscription_topic
+#     The topic name of the stream whose parameters are to be updated.
+#     Set to empty string ("") if you do not want to change the subscription topic.
+#   int8 quality_level
+#     Desired quality level for the stream (0 = lowest, 4 = highest).
+#     Valid values: 0, 1, 2, 3, 4.
+#     Set to -1 if you do not want to change the quality level.
+#
+# Response:
+#   bool success
+#     True if the stream parameters were successfully updated, false otherwise.
 string subscription_topic
-int32 frame_rate
-int32 width
-int32 height
-# int32 bitrate
+int8 quality_level
 ---
 bool success
-
