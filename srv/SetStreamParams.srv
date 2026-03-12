@@ -16,3 +16,4 @@ string subscription_topic
 int8 quality_level
 ---
 bool success
+string channel_name
